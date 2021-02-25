@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1" />
+    <title>Düşman Patlatmaca - ibrahimodev.tk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="score_panel">
+      <p><span id="puan"></span></p>
+      <p><span id="les"></span></p>
+      <p><span id="level"></span></p>
+    </div>
+    <div class="end_panel hidden" id="end_panel">
+      <div class="menu">
+        <h2>Tüh! Tekrar Dene!!</h2>
+        <p><span id="p_puan"></span></p>
+        <p><span id="p_les"></span></p>
+        <p><span id="p_level"></span></p>
+        <button onclick="init()">TEKRAR BAŞLA</button>
+      </div>
+    </div>
+    <div id="start_panel" class="start_panel">
+      <div class="menu">
+        <h2>Düşman Patlatmaca :D</h2>
+        <p>Düşmanlara Karşı kendini koru !!</p>
+        <h2>Oyun Hakkında</h2>
+            <ul>
+                <li>Düşmanın Sana Yaklaşmasına İzin Verme</li>
+                <li>Her 10 Leşte Düşman Sayısı Artıyor</li>
+                <li>Düşmanlar Arttıkça Hızları Yavaşlıyor</li>
+            </ul>
+        <button onclick="init()">BAŞLA</button>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="app.js"></script>
+  </body>
+</html>
