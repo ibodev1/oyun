@@ -1,0 +1,260 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: crosshair;
+    outline: none;
+    user-select: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+#score_panel {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    padding: .5rem;
+    color: white;
+    font-size: 1.5rem;
+    user-select: none;
+}
+
+select {
+    z-index: 99;
+    cursor: pointer;
+}
+
+#stop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer !important;
+    z-index: 1;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form input[type="color"] {
+    background-color: white;
+    border: 0;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+form label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 0px 15px;
+    height: 25px;
+    margin: 0px 13px;
+    border: 2px solid orangered;
+    cursor: pointer;
+    color: orangered;
+}
+
+form input[type="radio"]:checked+label{ 
+    background-color: orangered;
+    color: white;
+ } 
+
+.ayarlar {
+    position: relative;
+    text-align: center;
+    width: 50%;
+    min-width: 550px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background-color: white;
+    padding-top: 30px;
+}
+
+.ayarlar #close_btn {
+    position: absolute;
+    right: 35px;
+    top: 35px;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.start_panel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.start_panel .menu {
+    width: 500px;
+    height: auto;
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.start_panel .menu h2 {
+    font-size: 32px;
+}
+
+.start_panel .menu p {
+    font-size: 20px;
+}
+
+.start_panel .menu button {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 5em;
+    cursor: pointer;
+}
+
+.stop_panel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stop_panel .menu {
+    width: 500px;
+    height: auto;
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stop_panel .menu h2 {
+    font-size: 32px;
+}
+
+.stop_panel .menu p {
+    font-size: 20px;
+}
+
+.stop_panel .menu button {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 5em;
+    cursor: pointer;
+}
+
+.end_panel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.end_panel .menu {
+    width: 500px;
+    height: auto;
+    padding: 1.5rem 1rem;
+    border-radius: 2rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.end_panel .menu h2 {
+    font-size: 32px;
+    color: red;
+}
+
+.end_panel .menu p {
+    font-size: 20px;
+}
+
+.end_panel .menu button {
+    width: 200px;
+    margin: 10px 0px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0;
+    background: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 5em;
+    cursor: pointer;
+}
